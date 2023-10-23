@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+      <div class="header">
+        <h1>My Home Page</h1>
+    </div>
+
+    
+        <ul>
+            <li><a class="active" href="home.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+           
+			<div class="dropdown">
+			<li><a class="dropbtn"><i class="fa fa-user-circle"></i>  Profile </a></li>
+			<div class="dropdown-content">
+			<a href="pictures.html"><i class="fa fa-picture-o"></i> Pictures</a>
+			<a href="videos.html"><i class="fa fa-film"></i> Videos</a>
+	  
+			</div>
+			</div> 
+			 <li><a href="about.html"><i class="fa fa-fw fa-user"></i>  About </a></li>
+			 <li><a href="news.html"><i class="fa fa-newspaper-o"></i>  News </a></li>
+        </ul>
+        
+        <div class="content">
+   <div class="container">
+    <div class="heading">VIDEO GALLERY</div>
+
+    <div class="video-container">
+
+        <div class="video">
+            <video src="1.mp4"></video>
+         
+        </div>
+
+        <div class="video">
+            <video src="2.mp4"></video>
+        </div>
+
+        
+        
+        
+    </div>
+</div>
+
+<script>
+
+    var videos = document.querySelectorAll('.video video');
+    videos.forEach(video => video.addEventListener('click', () => {
+
+        video.classList.toggle('active');
+
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+            video.currentTime = 0;
+        }
+
+    }));
+
+</script>
+
+
+</div>
+
+	
+
+    <footer>
+        <p>All rights reserved</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+    
+      <div class="header">
+        <h1>My About Page</h1>
+    </div>
+    
+        <ul>
+            <li><a class="active" href="home.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+           
+			<div class="dropdown">
+			<li><a class="dropbtn"><i class="fa fa-user-circle"></i>  Profile </a></li>
+			<div class="dropdown-content">
+			<a href="pictures.html"><i class="fa fa-picture-o"></i> Pictures</a>
+			<a href="videos.html"><i class="fa fa-film"></i> Videos</a>
+	  
+			</div>
+			</div> 
+			 <li><a href="about.html"><i class="fa fa-fw fa-user"></i>  About </a></li>
+			 <li><a href="news.html"><i class="fa fa-newspaper-o"></i>  News </a></li>
+        </ul>
+
+
+    <div class="content">
+
+		 <main>
+		<div class="single-box">
+			<div class="header-area img1"></div>
+			<div class="body-area">
+				<h3>Lorie Mae Cadorna</h3>
+				<h4>Bachelor of Science in Information Technology</h4>
+
+<p class="socials"><i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i> <i class="fa fa-pinterest"></i> <i class="fa fa-linkedin"></i></p>
+		
+<button id="modal-button">Learn More</button>
+			</div>
+		</div>
+		<article id="modal-container">
+			<section id="modal-section">
+				<button id="modal-close-button">X</button>
+				<h3 id="modal-title">My Skillset</h3>
+				<p id="modal-content"></p>
+				<div class="skill-box">
+					<p>HTML</p>
+					<div class="skill-area">
+						<div class="skills" style="width: 50%">
+							50%
+						</div>
+					</div>
+					<p>CSS</p>
+					<div class="skill-area">
+						<div class="skills" style="width: 30%">30</div>
+					</div>
+
+					<p>Javascript</p>
+					<div class="skill-area">
+						<div class="skills" style="width: 20%">
+							20%
+						</div>
+					</div>
+					<p>React</p>
+					<div class="skill-area">
+						<div class="skills" style="width: 50%">
+							50%
+						</div>
+					</div>
+				</div>
+				<p></p>
+			</section>
+		</article>
+	</main>
+	<script>
+	       let X = document.getElementById('modal-button');
+	let modal = document.getElementById('modal-container');
+	let Y = document.getElementById('modal-close-button');
+
+	X.onclick = function() {
+	 modal.style.display = "block";
+	}
+
+	Y.onclick = function() {
+	 modal.style.display = "none";
+	}
+	</script>
+
+
+    </div>
+
+   </div>
+	
+
+    <footer>
+        <p>All rights reserved</p>
+    </footer>
+</body>
+
+</html>
